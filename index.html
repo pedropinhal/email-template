@@ -11,7 +11,7 @@
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
         <style type="text/css">
-            body,p,button,h1,h2,h3{
+            body,p,button,h1,h2,h3,ul,li{
                 margin: 0;
             }
 
@@ -50,20 +50,42 @@
                 width: 200px;
             }
 
+            #header ul{
+                float: right;
+
+            }
+
+            #header ul li{
+                list-style: none;
+                float: left;
+                padding: 0 10px 0 10px; 
+            }
+
+            #header a{
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            #header a:hover{
+                 color: rgb(128, 26, 0);
+            }
+
             #hero{
                 height: 340px;
                 background-image: url('src/Fossoli Camp image.jpg');
                 background-size: 600px;
                 background-repeat: no-repeat;
             }
-            #hero h1,h3{                
+            #hero h1,h3{
                 float: right;
                 margin: 0;
                 padding: 0 10px 0 0;
+            }
+            #hero h1{                
                 font-size: 37px;
+                color: rgb(128, 26, 0);
             }
             #hero h3{
-                color: #FF3300;
                 font-style: italic;
                 font-size: 25px;
             }
@@ -83,13 +105,22 @@
 
             #footer{
                 background-color: #EAEAE9;
-                height:120px;
-                padding: 10px;
+                height:100px;
+                padding: 5px;
+                font-size: 23px;
             }
-            #footer img{
+            #footer p.image{
                 float:right;
-                width: 250px;
+                width: 200px;
             }
+            #footer p.image img{
+                width: 200px;
+            }
+
+            #footer p.quote{
+                width: 200px;
+            }
+
         </style>
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -101,6 +132,11 @@
         <div id="container">
             <div id="header">
                 <img src="src\Sixpoints Banner copy.png">
+                <ul>
+                    <li><a href="">Get Involved</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
             </div>
             <div id="hero">
                 <h1>The Neighbor Within</h1>
@@ -124,8 +160,9 @@
 
             </div>
             <div id="footer">
-                <p>Fiscally sponsored by THE JEWISH FOUNDATION <img src="src\NCJF logo with web.png" width="300px"></p>
-                <p><i>"Most important"</i> - Steven Spielberg</p>
+                <p class="image">Fiscally sponsored by <img src="src\NCJF logo with web.png"></p>
+
+                <p class="quote"><i>"Most important"</i><br /> - Steven Spielberg Jewish Film Archives</p>
 
             </div>
         </div>
