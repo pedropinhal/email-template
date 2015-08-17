@@ -6,7 +6,7 @@
         <title>The Neighbor Within</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
@@ -20,18 +20,22 @@
                 font-family: 'Open Sans Condensed', sans-serif;
                 font-size: 25px;
             }
+            a{
+              text-decoration: none;
+              color: inherit;
+            }
 
-            button{
+            a.button{
                  border: 0;
-                 height:60px;
+                 height:50px;
                  font-size: 34px;
                  cursor: pointer;
                  background-color: rgb(0, 153, 204);
                  color: white;
-                 border-radius: 3px;
-
+                 border-radius: 5px;
+                 margin:5px auto;
             }
-            button:hover{
+            a.button:hover{
                 background-color: rgb(0, 102, 204);
             }
 
@@ -58,7 +62,7 @@
             #header ul li{
                 list-style: none;
                 float: left;
-                padding: 0 10px 0 10px; 
+                padding: 0 10px 0 10px;
             }
 
             #header a{
@@ -81,7 +85,7 @@
                 margin: 0;
                 padding: 0 10px 0 0;
             }
-            #hero h1{                
+            #hero h1{
                 font-size: 37px;
                 color: rgb(128, 26, 0);
             }
@@ -95,12 +99,25 @@
             }
             #blurb p{ margin-bottom: 10px;}
 
-            #donate p.donate{                
+            #donate p.donate{
                 text-align: center;
-                padding: 0 0 0px 0;
+
             }
-            #donate p.donate button{
-                width:100%;
+            #donate p.donate a{
+                width:95%;
+            }
+            #donate{
+              font-size: 15px;
+              text-align: right;
+            }
+            #donate span{
+              padding-right: 15px;
+            }
+
+            #donate a{
+              color: white;
+
+              display: block;
             }
 
             #footer{
@@ -131,36 +148,41 @@
 
         <div id="container">
             <div id="header">
-                <img src="src\Sixpoints Banner copy.png">
+              <a href="http://www.sixpointsproductions.com"><img src="src\Sixpoints Banner copy.png"></a>
+
                 <ul>
-                    <li><a href="">Get Involved</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="http://www.sixpointsproductions.com/get_involved">Get Involved</a></li>
+                    <li><a href="http://www.sixpointsproductions.com/about">About</a></li>
+                    <li><a href="mailto:roberto@sixpointsproductions.com">Contact</a></li>
                 </ul>
             </div>
             <div id="hero">
-                <h1>The Neighbor Within</h1>
+
+                <h1><a href=" www.sixpointsproductions.com/">The Neighbor Within</a></h1>
                 <h3>The Hidden History of Concentration Camps in Italy</h3>
-                
+
             </div>
             <div id="blurb">
                 <p>
-                    The discrimination faced by Jews in Italy and the eleven Concentration Camps on Italian soil during World War II remain vastly unacknowledged, leaving many in the Italian Jewish communities struggling to keep their history of persecution alive as their memories at times run completely contrary to the official narrative now prevalent in Italian society. 
+                    The discrimination faced by Jews in Italy and the eleven Concentration Camps on Italian soil during World War II remain vastly unacknowledged, leaving many in the Italian Jewish communities struggling to keep their history of persecution alive as their memories at times run completely contrary to the official narrative now prevalent in Italian society.
                 </p>
                 <p>
                     <strong>Help us tell their story...</strong>
                 </p>
 
-               
+
             </div>
             <div id="donate">
                 <p class="donate">
-                    <button >Donate (via PayPal)</button>
+                    <a href="http://jewishfilm.org/fiscal_sponsorship_neighbor.htm" class="button">Donate*</a>
                 </p>
+                <span>*via PayPal</span>
 
             </div>
             <div id="footer">
-                <p class="image">Fiscally sponsored by <img src="src\NCJF logo with web.png"></p>
+                <p class="image">Fiscally sponsored by
+                  <a href=" http://jewishfilm.org/fiscal_sponsorship_neighbor.htm"><img src="src\NCJF logo with web.png"></a>
+                </p>
 
                 <p class="quote"><i>"Most important"</i><br /> - Steven Spielberg Jewish Film Archives</p>
 
