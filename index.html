@@ -11,8 +11,11 @@
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
         <style type="text/css">
-            body,p, button{
+            body,p,button,h1,h2,h3{
                 margin: 0;
+            }
+
+            body,button{
                 /*font-family: 'Open Sans', sans-serif;*/
                 font-family: 'Open Sans Condensed', sans-serif;
                 font-size: 17pt;
@@ -25,18 +28,24 @@
                  border: 0;*/
 
 
-                 
+                 border: 0;
                  height:60px;
                  font-size: 20pt;
+                 cursor: pointer;
+                 background-color: rgb(0, 153, 204);
+                 color: white;
+                 border-radius: 3px;
+
+            }
+            button:hover{
+                background-color: rgb(0, 102, 204);
             }
             
-            button:hover{
-                cursor: pointer;
-            }
+            
 
             div{
-                border: 1px solid #ccc;
-                padding: 5px;
+                
+                
             }
             #container{
                 width:780px;
@@ -44,14 +53,16 @@
             }
             #header{
                 text-align: center;
-                height: 100px;
+                height: 60px;
+                padding: 10px 0 0 0;
+                background-color: #EAEAE9;
 
             }
             img{
-                border: 1px solid red;
+                
             }
             #hero{
-                height: 450px;
+                height: 420px;
                 background-image: url('src/Fossoli Camp image.jpg');
                 background-size: 780px;
                 background-repeat: no-repeat;
@@ -62,8 +73,29 @@
                 padding: 0;
             }
             #hero h3{
-                color: red;
+                color: #FF3300;
                 font-style: italic;
+            }
+            #blurb{
+                padding: 5px;
+
+            }
+
+            #donate p.donate{
+                
+                text-align: center;
+            }
+            #donate p.donate button{
+                width:100%;
+            }
+
+            #footer{
+                background-color: #EAEAE9;
+                height:100px;
+                padding: 10px;
+            }
+            #footer img{
+                float:right;
             }
         </style>
         <!--[if lt IE 9]>
@@ -78,7 +110,7 @@
                 <!--
                 <img src="src\Sixpoints Banner copy.png" width="400px">
             -->
-            <h1>SixPoint Productions</h1> presents
+            <h2>SixPoint Productions presents</h2> 
                 
 
             </div>
@@ -89,11 +121,17 @@
             </div>
             <div id="blurb">
                 <p>
-                    The discrimination <strong>faced</strong> by Jews in Italy and the 11 Concentration Camps on Italian soil during World War II remain vastly unacknowledged, leaving many in the Italian Jewish communities struggling to keep their history of persecution alive as their memories at times run completely contrary to the official narrative now prevalent in Italian society. 
+                    The discrimination faced by Jews in Italy and the 11 Concentration Camps on Italian soil during World War II remain vastly unacknowledged, leaving many in the Italian Jewish communities struggling to keep their history of persecution alive as their memories at times run completely contrary to the official narrative now prevalent in Italian society. 
 
                 </p>
 
-                <p>Help us tell their story <button >Donate (via PayPal)</button></p>
+               
+            </div>
+            <div id="donate">
+                <p class="donate">
+                    <strong>Help us tell their story</strong>
+                    <br/> <button >Donate (via PayPal)</button>
+                </p>
 
             </div>
             <div id="footer">
