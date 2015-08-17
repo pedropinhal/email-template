@@ -6,20 +6,64 @@
         <title>title</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
         <style type="text/css">
-            body,p {
+            body,p, button{
                 margin: 0;
+                /*font-family: 'Open Sans', sans-serif;*/
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-size: 17pt;
             }
+
+            button{
+                
+                /*background-color: #efefef;
+                 outline: 0;
+                 border: 0;*/
+
+
+                 
+                 height:60px;
+                 font-size: 20pt;
+            }
+            
+            button:hover{
+                cursor: pointer;
+            }
+
             div{
-                border: 1px solid red;
+                border: 1px solid #ccc;
+                padding: 5px;
             }
             #container{
                 width:780px;
 
             }
             #header{
+                text-align: center;
+                height: 100px;
 
+            }
+            img{
+                border: 1px solid red;
+            }
+            #hero{
+                height: 450px;
+                background-image: url('src/Fossoli Camp image.jpg');
+                background-size: 780px;
+                background-repeat: no-repeat;
+            }
+            #hero h1,h3{                
+                float: right;
+                margin: 0;
+                padding: 0;
+            }
+            #hero h3{
+                color: red;
+                font-style: italic;
             }
         </style>
         <!--[if lt IE 9]>
@@ -31,23 +75,30 @@
 
         <div id="container">
             <div id="header">
-                <h2>Sixpoint Productions</h2>
-                <button>Donate</button>
+                <!--
+                <img src="src\Sixpoints Banner copy.png" width="400px">
+            -->
+            <h1>SixPoint Productions</h1> presents
+                
+
             </div>
             <div id="hero">
-                <p>The Monster Within</p>
-                <img src="http://placehold.it/600x150">
+                <h1>The Neighbour Within</h1>
+                <h3>The Hidden History of Concentration Camps in Italy</h3>
+                
             </div>
             <div id="blurb">
                 <p>
-                    The discrimination faced by Jews in Italy and the 11 Concentration Camps on Italian soil during World War II remain vastly unacknowledged, leaving many in the Italian Jewish communities struggling to keep their history of persecution alive as their memories at times run completely contrary to the official narrative now prevalent in Italian society. 
+                    The discrimination <strong>faced</strong> by Jews in Italy and the 11 Concentration Camps on Italian soil during World War II remain vastly unacknowledged, leaving many in the Italian Jewish communities struggling to keep their history of persecution alive as their memories at times run completely contrary to the official narrative now prevalent in Italian society. 
 
                 </p>
-                <p>Help us tell their story</p>
+
+                <p>Help us tell their story <button >Donate (via PayPal)</button></p>
+
             </div>
             <div id="footer">
-                <p>Fiscally sponsored by THE JEWISH FOUNDATION</p>
-                <p>"Most important"</p>
+                <p>Fiscally sponsored by THE JEWISH FOUNDATION <img src="src\NCJF logo with web.png" width="300px"></p>
+                <p><i>"Most important"</i> - Steven Spielberg</p>
 
             </div>
         </div>
